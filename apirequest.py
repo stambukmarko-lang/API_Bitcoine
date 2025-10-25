@@ -13,4 +13,11 @@ if r.status_code == 200:
 else:
     print(f"Greška: {r.status_code}")
     
-print(r.text)  # ispiše prvih 500 znakova HTML-a
+print(r.text[:500])  # ispiše prvih 500 znakova HTML-a
+
+print()
+encod= r.encoding
+header = r.headers
+
+print(encod)
+print(header)
